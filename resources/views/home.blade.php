@@ -1,33 +1,8 @@
-<!-- resources/views/home.blade.php -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAKANEEDS - Home</title>
+@extends('layouts.app')
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 font-sans">
+@section('title', 'Home')
 
-<!-- Navbar -->
-<nav class="bg-white shadow-sm px-8 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-green-600">SAKAANEEDS</h1>
-
-    <ul class="flex gap-8 text-gray-600 font-medium">
-        <li class="text-green-600 border-b-2 border-green-600 pb-1">Games</li>
-        <li>Top-Up</li>
-        <li>History</li>
-        <li>Support</li>
-    </ul>
-
-    <div class="flex gap-4 text-xl">
-        <span>🛒</span>
-        <span>🔔</span>
-    </div>
-</nav>
-
+@section('content')
 <!-- Hero Section -->
 <section class="px-10 mt-8">
     <div class="bg-green-200 rounded-3xl p-10 flex items-center justify-between">
@@ -173,26 +148,4 @@
     </div>
 
 </section>
-
-<!-- Footer -->
-<footer class="bg-green-100 px-10 py-6 flex justify-between items-center">
-
-    <h2 class="font-bold text-green-700">
-        SAKANEEDS
-    </h2>
-
-    <div class="flex gap-6 text-gray-600 text-sm">
-        <a href="#">About Us</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Refund Policy</a>
-    </div>
-
-    <p class="text-sm text-gray-600">
-        © 2026 SAKANEEDS. Keep Gaming, Stay Bubbly!
-    </p>
-
-</footer>
-
-</body>
-</html>
+@endsection
