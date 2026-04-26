@@ -10,7 +10,6 @@
 </head>
 <body class="bg-[#F8FAFC] flex min-h-screen">
 
-    @include('admin.layouts.partials.sidebar')
 
     <main class="flex-1 p-10 overflow-y-auto">
         @include('admin.layouts.partials.header')

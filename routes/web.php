@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\GameController;
+use App\Http\Controllers\Admin\TransactionController;
 
 Route::get('/', function () {
     return view('home');
@@ -23,4 +24,5 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::post('/games', [GameController::class, 'store'])->name('admin.games.store');
     Route::put('/games/{id}', [GameController::class, 'update'])->name('admin.games.update');
     Route::delete('/games/{id}', [GameController::class, 'destroy'])->name('admin.games.destroy');
+    Route::get('/transactions', [TransactionController::class, 'index'])->name('admin.transactions.index'); 
 });
